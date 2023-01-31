@@ -1,0 +1,383 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+nav {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.barNavigation {
+    display: flex;
+    align-items: center;
+}
+
+.barNavigation ul {
+    margin-left: auto;
+    display: flex;
+    list-style-type: none;
+}
+
+.barNavigation a {
+    margin-left: 30px;
+
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.barNavigation a:hover {
+    opacity: 0.7;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo img {
+    width: 50px;
+}
+
+.logo p {
+    margin-left: 30px;
+    font-size: 24px;
+    color: black;
+}
+
+.background {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.titre {
+    margin-top: 20px;
+    font-size: 56px;
+    text-align: center;
+}
+
+.description__site {
+    margin-top: 40px;
+
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 2;
+}
+
+.btn__centre {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.btn {
+    display: inline-block;
+
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+
+    transition: 200ms;
+
+    cursor: pointer;
+}
+
+.btn.save {
+    background-color: #4db36d;
+    border: 1px solid #4db36d;
+}
+
+.btn.delete {
+    background-color: #d65151;
+    border: 1px solid #d65151;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.box_container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 35px;
+}
+
+.box {
+    flex-grow: 1;
+    border: 1px solid #cccccc;
+    padding: 15px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px #0000004d;
+
+    text-decoration: none;
+}
+
+.box_image {
+    border-radius: 10px;
+    background-color: #eeeeee;
+    height: 250px;
+    margin-bottom: 20px;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.box_image img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+}
+
+.box__name {
+    font-size: 24px;
+    color: black;
+}
+
+.box__price {
+    margin-top: 10px;
+    color: black;
+    font-size: 20px;
+}
+
+.service {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    height: 500px;
+}
+
+.service__image {
+    border-radius: 10px;
+    background-color: #eeeeee;
+    height: 100%;
+    flex-basis: 450px;
+    flex-shrink: 0;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.service__image img {
+    position: absolute;
+    inset: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.service__detail {
+    flex-grow: 1;
+    padding-left: 50px;
+}
+
+.service__name {
+    font-size: 48px;
+}
+
+.description {
+    margin-top: 40px;
+    font-size: 1.2rem;
+    line-height: 2;
+}
+
+.price {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-size: 48px;
+}
+
+.rendezvous__box {
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    padding-left: 30px;
+    padding-right: 30px;
+
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px #0000004d;
+}
+
+.rendezvous__image {
+    height: 350px;
+    background-color: #eeeeee;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.rendezvous__image img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.rendezvous__name {
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.input {
+    margin-top: 1rem;
+    width: 100%;
+}
+
+label {
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+input,
+textarea {
+    border: 1px solid #cccccc;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+
+    font-size: 20px;
+}
+
+textarea {
+    resize: none;
+    height: 150px;
+}
+
+.margin-top {
+    margin-top: 30px;
+}
+
+.reservation__box__container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.reservation__box {
+    margin-top: 50px;
+    padding: 20px;
+    padding-bottom: 30px;
+
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px #0000004d;
+
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.reservation__box li {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.connexion__box {
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    padding-left: 30px;
+    padding-right: 30px;
+
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px #0000004d;
+}
+
+.ajouter__service__box {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+    padding-bottom: 30px;
+
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px #0000004d;
+}
+
+.nouveau__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 32px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #b3b3b3;
+
+    min-height: 400px;
+    padding: 15px;
+    padding-bottom: 30px;
+
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px #0000004d;
+    transition: 200ms;
+    opacity: 0.8;
+}
+
+.nouveau__box:hover {
+    opacity: 1;
+}
+
+.success-msg {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 60px;
+    padding-bottom: 70px;
+
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px #0000004d;
+}
+
+.success-msg h1 {
+    font-size: 32px;
+    text-align: center;
+}
+
+.success-msg h2 {
+    margin-top: 20px;
+    text-align: center;
+}
